@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Wrapped</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- html2canvas -->
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+<body>
+
+<div class="particles"></div>
+
+<div class="container">
+
+  <h1 class="title">🎧 Spotify Wrapped</h1>
+
+  <button id="loginBtn">Login with Spotify</button>
+
+  <div class="bars">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div id="results"></div>
+
+  <div id="demo" class="hidden">
+
+    <h2 class="wrapped-title">Your Wrapped 🎶</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <span>🔥</span>
+        <h3>Top Genre</h3>
+        <p>Pop</p>
+      </div>
+
+      <div class="card">
+        <span>🎧</span>
+        <h3>Your Vibe</h3>
+        <p>Chill Listener</p>
+      </div>
+
+      <div class="card">
+        <span>🌙</span>
+        <h3>Listening Style</h3>
+        <p>Night Owl</p>
+      </div>
+
+      <div class="card">
+        <span>🎤</span>
+        <h3>Top Artist</h3>
+        <p>Taylor Swift</p>
+      </div>
+
+    </div>
+
+    <!-- CHART + LEGEND -->
+    <div class="chart-container">
+
+      <canvas id="genreChart"></canvas>
+
+      <div class="custom-legend">
+        <div><span style="background:#1db954"></span> Pop</div>
+        <div><span style="background:#ff4d6d"></span> Hip-Hop</div>
+        <div><span style="background:#ffa94d"></span> Rock</div>
+        <div><span style="background:#ffd43b"></span> Indie</div>
+      </div>
+
+    </div>
+
+    <button id="shareBtn">📸 Share My Wrapped</button>
+
+    <p class="note">Demo mode (Spotify API limitation)</p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
