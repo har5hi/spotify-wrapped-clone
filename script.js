@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const demoDiv = document.getElementById("demo");
 
   loginBtn.addEventListener("click", () => {
+  showDemo();   // no backend
+});
+
+  loginBtn.addEventListener("click", () => {
     const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=user-read-email`;
     window.location.href = authUrl;
   });
