@@ -13,8 +13,10 @@ A web application inspired by Spotify Wrapped that visualizes user listening ins
 🛠️ Tech Stack
 HTML, CSS, JavaScript, Chart.js, Node.js (for local backend), Git & GitHub
 
-How to Run Locally
+📸 Screenshots
+![App Screenshot](screenshot.png)
 
+How to Run Locally
 1. Clone the repository
 
 ```bash
