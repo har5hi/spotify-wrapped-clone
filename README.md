@@ -20,10 +20,6 @@ Chart.js
 Node.js (for local backend)
 Git & GitHub
 
-📸 Screenshots
-
-![App Screenshot](screenshot.png)
-
 How to Run Locally
 
 1. Clone the repository
